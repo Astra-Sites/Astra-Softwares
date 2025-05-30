@@ -106,7 +106,7 @@
                         <p class="mb-4 lead fw-bold">Automating tasks & improving decision-making</p>
                         <p class="mb-4">We create AI tools for a wide range of sectors, including education, health, agriculture, compliance, and customer support. Whether it's powering smart learning platforms, automating workflows in agri-tech, or assisting users through
                              conversational interfaces, we tailor AI systems to match the specific needs of each industry.</p>
-                        <a href="accounts:maintainance"
+                        <a href="./includes/soon.php"
                             target="_blank" class="btn btn-primary mt-2 animate-up-2">
                             <span class="fas fa-th-large me-2"></span>
                             Explore our Work
@@ -124,7 +124,7 @@
                         <p class="mb-4 lead fw-bold">Learn in-demand tech skills through our Portfolio Ready program</p>
                         <p class="mb-4">We offer practical, project-based training for students, beginners, and professionals through our learning platform, Portfolio Ready. Our goal is to equip learners
                              with real-world coding and AI skills that are aligned with current industry demands.</p>
-                        <a href="accounts:maintainance" target="_blank"
+                        <a href="./includes/maintain.php" target="_blank"
                             class="btn btn-tertiary animate-up-2"><span class="fas fa-chart-line me-2"></span> Explore
                             Portfolio Ready</a>
                     </div>
