@@ -443,16 +443,16 @@
                            If you have any questions, concerns, or feedback regarding these Terms and Conditions, or if you require further clarification about our services, please reach out to us using the following contact details:
                         </p>
 
-                        <ul>
-                           <li><strong>Company Name:</strong> Astra Softwares</li>
-                           <li><strong>Email (General Support):</strong> <a href="mailto:support@astrasoft.tech">support@astrasoft.tech</a></li>
-                           <li><strong>Email (Legal or Terms):</strong> <a href="mailto:legal@astrasoft.tech">legal@astrasoft.tech</a></li>
-                           <li><strong>Email (Partnerships):</strong> <a href="mailto:partners@astrasoft.tech">partners@astrasoft.tech</a></li>
-                           <li><strong>Email (inquiries):</strong> <a href="mailto:info@astrasoft.tech">info@astrasoft.tech</a></li>
-                           <li><strong>Physical Address:</strong> P.O. Box 1234-00100, Nairobi, Kenya</li>
-                           <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/254727405667" target="_blank">+2547 2740 5667</a></li>
-                           <li><strong>Website:</strong> <a href="https://www.astrasoft.tech" target="_blank">www.astrasoft.tech</a></li>
-                        </ul>
+               <ul>
+                  <li><strong>Company Name:</strong> Astra Softwares</li>
+                  <li><strong>Email (General Support):</strong> <a href="mailto:support@astrasoft.tech">support@astrasoft.tech</a></li>
+                  <li><strong>Email (Legal or Terms):</strong> <a href="mailto:legal@astrasoft.tech">legal@astrasoft.tech</a></li>
+                  <li><strong>Email (Partnerships):</strong> <a href="mailto:partners@astrasoft.tech">partners@astrasoft.tech</a></li>
+                  <li><strong>Email (inquiries):</strong> <a href="mailto:info@astrasoft.tech">info@astrasoft.tech</a></li>
+                  <li><strong>Physical Address:</strong> P.O. Box 1234-00100, Nairobi, Kenya</li>
+                  <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/254727405667" target="_blank">+2547 2740 5667</a></li>
+                  <li><strong>Website:</strong> <a href="https://www.astrasoft.tech" target="_blank">www.astrasoft.tech</a></li>
+               </ul>
 
                         <p>
                            We aim to respond to all inquiries within 24–48 business hours.

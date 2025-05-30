@@ -147,6 +147,40 @@
         </section>
 
 
+<section class="section section-lg pt-6 container">
+    <div class="col-12 text-center mb-5">
+        <h2>Our Contact Information</h2>
+    </div>
+    <ul class="container list-unstyled d-flex align-items-start justify-content-center flex-wrap text-center">
+        <li class="m-3 w-100 w-md-50">
+            <i class="fas fa-envelope me-2"></i><strong>Email (General Support):</strong>
+            <a href="mailto:support@astrasoft.tech">support@astrasoft.tech</a>
+        </li>
+        <li class="m-3 w-100 w-md-50">
+            <i class="fas fa-file-contract me-2"></i><strong>Email (Legal or Terms):</strong>
+            <a href="mailto:legal@astrasoft.tech">legal@astrasoft.tech</a>
+        </li>
+        <li class="m-3 w-100 w-md-50">
+            <i class="fas fa-handshake me-2"></i><strong>Email (Partnerships):</strong>
+            <a href="mailto:partners@astrasoft.tech">partners@astrasoft.tech</a>
+        </li>
+        <li class="m-3 w-100 w-md-50">
+            <i class="fas fa-info-circle me-2"></i><strong>Email (inquiries):</strong>
+            <a href="mailto:info@astrasoft.tech">info@astrasoft.tech</a>
+        </li>
+        <!-- Uncomment if needed
+        <li class="m-3 w-100 w-md-50">
+            <i class="fas fa-map-marker-alt me-2"></i><strong>Physical Address:</strong> P.O. Box 1234-00100, Nairobi, Kenya
+        </li>
+        -->
+        <li class="m-3 w-100 w-md-50">
+            <i class="fab fa-whatsapp me-2"></i><strong>Phone / WhatsApp:</strong>
+            <a href="https://wa.me/254727405667" target="_blank">+2547 2740 5667</a>
+        </li>
+    </ul>
+</section>
+
+
 
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://api.whatsapp.com/send?phone=+254727405667&text=Hello Astra Softwares." class="float" target="_blank">

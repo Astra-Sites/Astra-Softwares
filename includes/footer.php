@@ -50,25 +50,25 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
             <div class="col-6 col-md-2 mb-5 mb-lg-0">
                 <span class="h5">AstraSoft</span>
                 <ul class="footer-links mt-2">
-                    <li><a target="_blank" href="careers">Careers</a></li>
-                    <li><a target="_blank" href="profile">Profile</a></li>
-                    <li><a target="_blank" href="about">About Us</a></li>
-                    <li><a target="_blank" href="contact">Contact Us</a></li>
+                    <li><a target="_blank" href="careers.php">Careers</a></li>
+                    <li><a target="_blank" href="profile.php">Profile</a></li>
+                    <li><a target="_blank" href="about.php">About Us</a></li>
+                    <li><a target="_blank" href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
             <div class="col-6 col-md-2 mb-5 mb-lg-0">
                 <span class="h5">Other</span>
                 <ul class="footer-links mt-2">
-                    <li><a href="blog"
+                    <li><a href="blog.php"
                             target="_blank">Blog</a></li>
                     <li>
-                        <a href="gallery"  target="_blank">Gallery</a>
+                        <a href="gallery.php"  target="_blank">Gallery</a>
                     </li>
                     <li>
                         <a target="_blank" href="terms">Terms</a>
                     </li>
                     <li>
-                        <a target="_blank" href="contact">Support</a>
+                        <a target="_blank" href="contact.php">Support</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +91,7 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
                     </div>
                 </form>
                 <p class="text-muted font-small m-0">We’ll never share your details. See our <a class="text-white"
-                        href="terms#privacy-and-data-protection">Privacy Policy</a></p>
+                        href="terms.php#privacy-and-data-protection">Privacy Policy</a></p>
             </div>
         </div>
         <hr class="bg-secondary my-3 my-lg-5">
