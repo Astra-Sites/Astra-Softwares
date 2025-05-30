@@ -1,12 +1,9 @@
-{% extends 'home/layout.html
-{% load static %}
+  <?php 
+  include('./config/database.php'); 
+   $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+   include ('./includes/header.php');
+  ?>
 
-
-{% block title %}
-<title>Astra Softwares | Job Opportunities</title>
-{% endblock %}
-
-{% block content %}
    <!-- Hero -->
    <section class="section-header pb-9 pb-lg-10 mb-4 mb-lg-6 bg-primary text-white">
       <div class="container">
@@ -63,38 +60,54 @@
             </div>
          </div>
 
-    <div class="row">
-    {% for job in jobs %}
-    <div class="col-12 mb-4">
-        <div class="card bg-white shadow border-gray-300">
-            <div class="card-body p-4 p-lg-5">
-                <div class="row">
-                    <div class="col-12 col-md-6 mb-4 mb-lg-0">
-                        <h3 class="mb-3">{{ job.job_title }}</h3>
-                        <p class="text-gray mb-4">{{ job.intro|truncatewords:30 }}</p>
-                        <div class="d-sm-flex">
-                            <a href="#"><span class="fas fa-map-marker-alt"></span><span class="h6 text-sm ms-2">{{ job.location }}</span></a>
-                            <div class="ms-sm-4 mt-1 mt-sm-0">
-                                <span class="fas fa-user-tie text-secondary"></span>
-                                <span class="h6 text-sm ms-2">{{ job.employment_type }}</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-md-end">
-                        <a href="https://forms.gle/QLBdvB54NUk9cUiP7" class="btn btn-secondary me-3 animate-up-2 m-0">Apply</a>
-                        <a href="home:job_details' job.id %}" class="btn btn-primary animate-up-2 m-0">
-                            <i class="fas fa-clipboard-list me-2"></i>See Details
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {% empty %}
-    <p>No job listings found.</p>
-    {% endfor %}
-</div>
 
-      </div>
-   </section>
-{% endblock %}
+     <div class="row">
+      <?php
+      $sql = "SELECT * FROM Job ORDER BY id DESC";
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+         while ($job = $result->fetch_assoc()) {
+      ?>
+       <div class="col-12 mb-4">
+            <div class="card bg-white shadow border-gray-300">
+                  <div class="card-body p-4 p-lg-5">
+                     <div class="row">
+                        <div class="col-12 col-md-6 mb-4 mb-lg-0">
+                              <h3 class="mb-3"><?= htmlspecialchars($job['job_title']) ?></h3>
+                              <p class="text-gray mb-4"><?= htmlspecialchars(implode(' ', array_slice(explode(' ', $job['intro']), 0, 30))) ?>...</p>
+                              <div class="d-sm-flex">
+                                 <a href="#"><span class="fas fa-map-marker-alt"></span><span class="h6 text-sm ms-2"><?= htmlspecialchars($job['location']) ?></span></a>
+                                 <div class="ms-sm-4 mt-1 mt-sm-0">
+                                    <span class="fas fa-user-tie text-secondary"></span>
+                                    <span class="h6 text-sm ms-2"><?= htmlspecialchars($job['employment_type']) ?></span>
+                                 </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-md-end">
+                              <a href="https://forms.gle/QLBdvB54NUk9cUiP7" class="btn btn-secondary me-3 animate-up-2 m-0">Apply</a>
+                              <a href="job_details.php?id=<?= $job['id'] ?>" class="btn btn-primary animate-up-2 m-0">
+                                 <i class="fas fa-clipboard-list me-2"></i>See Details
+                              </a>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      <?php
+         }
+      } else {
+         echo "<p>No job listings found.</p>";
+      }
+      ?>
+ </div>
+
+</div>
+</section>
+
+
+
+<?php
+  include ('./includes/footer.php');
+?>
+

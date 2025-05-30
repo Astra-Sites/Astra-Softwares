@@ -1,10 +1,15 @@
 
+<?php
+$baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]/astrasoft";
+?>
+
+
 </main>
 <footer class="footer pt-6 pb-5 bg-primary text-white">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <img class="navbar-brand-dark mb-4" height="35" src="http://localhost/astrasoft/static/assets/img/brand/logo1.png"
+                <img class="navbar-brand-dark mb-4" height="35" src="<?= $baseUrl ?>/static/assets/img/brand/logo1.png"
                    style="filter: invert(2) brightness(100);" alt="Astra Softwares Logo" >
                 <p>Astra Softwares empowers businesses and individuals through innovative AI solutions, custom software development, and hands-on tech education. We build smarter systems and practical digital skills that make an impact.</p>
                 <ul class="social-buttons mb-5 mb-lg-0">
@@ -93,7 +98,7 @@
         <div class="row">
             <div class="col mb-md-0">
                 <a href="index" target="_blank" class="d-flex justify-content-center mb-3">
-                    <img src="http://localhost/astrasoft/static/assets/img/brand/logo1.png" height="30" class="me-2" alt="astra softwares Logo">
+                    <img src="<?= $baseUrl ?>/static/assets/img/brand/logo1.png" height="30" class="me-2" alt="astra softwares Logo">
                     <p class="text-white fw-bold footer-logo-text m-0">Astra softwares</p>
                 </a>
                 <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
@@ -106,19 +111,19 @@
 </footer>
 
 <!-- Core -->
-<script src="http://localhost/astrasoft/static/vendor/@popperjs/core/dist/umd/popper.min.js"></script>
-<script src="http://localhost/astrasoft/static/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="http://localhost/astrasoft/static/vendor/headroom.js/dist/headroom.min.js"></script>
+<script src="<?= $baseUrl ?>/static/vendor/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="<?= $baseUrl ?>/static/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?= $baseUrl ?>/static/vendor/headroom.js/dist/headroom.min.js"></script>
 
 <!-- Vendor JS -->
-<script src="http://localhost/astrasoft/static/vendor/onscreen/dist/on-screen.umd.min.js"></script>
-<script src="http://localhost/astrasoft/static/vendor/jarallax/dist/jarallax.min.js"></script>
-<script src="http://localhost/astrasoft/static/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script src="http://localhost/astrasoft/static/vendor/vivus/dist/vivus.min.js"></script>
-<script src="http://localhost/astrasoft/static/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+<script src="<?= $baseUrl ?>/static/vendor/onscreen/dist/on-screen.umd.min.js"></script>
+<script src="<?= $baseUrl ?>/static/vendor/jarallax/dist/jarallax.min.js"></script>
+<script src="<?= $baseUrl ?>/static/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="<?= $baseUrl ?>/static/vendor/vivus/dist/vivus.min.js"></script>
+<script src="<?= $baseUrl ?>/static/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- Pixel JS -->
-<script src="http://localhost/astrasoft/static/assets/js/pixel.js"></script>
+<script src="<?= $baseUrl ?>/static/assets/js/pixel.js"></script>
 </body>
 </html>
