@@ -1,12 +1,13 @@
-{% extends "home/layout.html" %}
-{% load static %}
 
 
-   {% block title %}
-   <title>Astra Softwares | News and Updates</title>
-   {% endblock %}
+<?php
 
-  {% block content %}
+$pageTitle  = "Astra Softwares | News & Updates";
+include ('./includes/header.php');
+?>
+
+
+
    <!-- Hero -->
    <section class="section-header bg-primary text-white pb-10 pb-sm-8 pb-lg-11">
       <div class="container">
@@ -23,12 +24,12 @@
          <div class="row">
             <div class="col-lg-12 mb-5">
                <div class="card shadow bg-white border-gray-300 flex-lg-row align-items-center g-0 p-4">
-                  <a href="home:blog_single'  %}" class="col-12 col-lg-6"><img src="static/assets/img/blog/eye.jpg" alt="themesberg office" class="card-img-top rounded"></a>
+                  <a href="blog-single.php" class="col-12 col-lg-6"><img src="static/assets/img/blog/eye.jpg" alt="themesberg office" class="card-img-top rounded"></a>
                   <div class="card-body d-flex flex-column justify-content-between col-auto py-4 p-0 p-lg-3 p-xl-5">
-                     <a href="home:blog_single">
+                     <a href="blog-single.php">
                         <h2>The Year 2050 in 8K resolution, Welcome to the Future</h2>
                      </a>
-                     <p>At Astra Softwares, we're constantly pushing boundaries to bring the future closer to today. One of the most exciting and transformative areas we're diving into is Quantum Machine Learning (QML)—an emerging discipline that blends the speed and complexity-handling power of quantum computing with the predictive intelligence of machine learning. <a href="home:blog_single"><span class="badge bg-tertiary"> Read More</span></a></p>
+                     <p>At Astra Softwares, we're constantly pushing boundaries to bring the future closer to today. One of the most exciting and transformative areas we're diving into is Quantum Machine Learning (QML)—an emerging discipline that blends the speed and complexity-handling power of quantum computing with the predictive intelligence of machine learning. <a href="blog-single.php"><span class="badge bg-tertiary"> Read More</span></a></p>
                      <div class="d-flex align-items-center mt-3">
                         <img class="avatar avatar-sm rounded-circle" src="static/assets/img/team/hope.jpg" alt="Kipkoech avatar">
                         <h3 class="h6 small ms-2 mb-0">Kipkoech Bett</h3>
@@ -133,5 +134,9 @@
          </div>
       </div>
    </section>
-  {% endblock %}
+ 
+
+<?php
+include ('./includes/footer.php');
+?>
   

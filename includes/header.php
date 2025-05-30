@@ -1,3 +1,6 @@
+<?php
+$baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]/astrasoft";
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,45 +21,45 @@
 <meta property="og:url" content="https://astrasoft.tech">
 <meta property="og:title" content="Astra Softwares – Transforming the Digital World">
 <meta property="og:description" content="Astra Softwares is your trusted partner in AI integration, website development, UI/UX design, SEO, and digital transformation. Explore our smart solutions today.">
-<meta property="og:image" content="static/assets/img/brand/logo1.png">
+<meta property="og:image" content="<?= $baseUrl ?>/static/assets/img/brand/logo1.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://astrasoft.tech">
 <meta property="twitter:title" content="Astra Softwares – Transforming the Digital World">
 <meta property="twitter:description" content="We specialize in AI integration, web design, development, SEO, and digital transformation solutions. Let Astra Softwares elevate your digital presence.">
-<meta property="twitter:image" content="static/assets/img/brand/logo1.png">
+<meta property="twitter:image" content="<?= $baseUrl ?>/static/assets/img/brand/logo1.png">
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="120x120" href="static/assets/img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="static/assets/img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="static/assets/img/favicon/favicon-16x16.png">
-<link rel="manifest" href="static/home/assets/img/favicon/site.webmanifest">
-<link rel="mask-icon" href="static/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+<link rel="apple-touch-icon" sizes="120x120" href="<?= $baseUrl ?>/static/assets/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?= $baseUrl ?>/static/assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<?= $baseUrl ?>/static/assets/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="<?= $baseUrl ?>/static/home/assets/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="<?= $baseUrl ?>/static/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 
 <!-- Fontawesome -->
-<link type="text/css" href="static/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link type="text/css" href="<?= $baseUrl ?>/static/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 
 <!-- Pixel CSS -->
-<link type="text/css" href="static/css/pixel.css" rel="stylesheet">
-<link type="text/css" href="static/css/pixel.css.map" rel="stylesheet">
+<link type="text/css" href="<?= $baseUrl ?>/static/css/pixel.css" rel="stylesheet">
+<link type="text/css" href="<?= $baseUrl ?>/static/css/pixel.css.map" rel="stylesheet">
 </head>
 <body>
 <header class="header-global">
     <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-dark">
         <div class="container position-relative">
-            <a class="navbar-brand me-lg-5" href="index.php">
-                <img class="navbar-brand-dark" src="static/assets/img/brand/logo1.png"  style="filter: invert(2) brightness(100);" alt="AstraSoftwares logo">
-                <img class="navbar-brand-light" src="static/assets/img/brand/Logo.png" style="filter: invert(2) brightness(100);" alt="AstraSoftwares logo">
+            <a class="navbar-brand me-lg-5" href="<?= $baseUrl ?>/index.php">
+                <img class="navbar-brand-dark" src="<?= $baseUrl ?>/static/assets/img/brand/logo1.png"  style="filter: invert(2) brightness(100);" alt="AstraSoftwares logo">
+                <img class="navbar-brand-light" src="<?= $baseUrl ?>/static/assets/img/brand/Logo.png" style="filter: invert(2) brightness(100);" alt="AstraSoftwares logo">
             </a>
             <div class="navbar-collapse collapse me-auto" id="navbar_global">
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
                             <a href="index.php">
-                                <img src="static/assets/img/brand/Logo.png" alt="AstraSoftwares logo">
+                                <img src="<?= $baseUrl ?>/static/assets/img/brand/Logo.png" alt="AstraSoftwares logo">
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
@@ -76,37 +79,37 @@
                                     <h6 class="d-block mb-3 text-primary">Main pages</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="about.php">About</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/about.php">About</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="contact.php">Contact</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/contact.php">Contact</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
                                             <a class="megamenu-link" href="#" target="_blank">Services</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="gallery.php" target="_blank">Gallery</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/gallery.php" target="_blank">Gallery</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="profile.php" target="_blank">Profile</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/profile.php" target="_blank">Profile</a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block text-primary">Legal</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="soon" target="_blank">Legal center <span class="badge bg-tertiary">soon</span></a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/soon.php" target="_blank">Legal center <span class="badge bg-tertiary">soon</span></a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="terms" target="_blank">Terms</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/terms.php" target="_blank">Terms</a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block text-primary">Career</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="careers" target="_blank">Careers</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/careers.php" target="_blank">Careers</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="careers" target="_blank">Career Single</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/careers.php" target="_blank">Career Single</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -114,31 +117,31 @@
                                     <h6 class="d-block mb-3 text-primary">Landings</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="maintainance">Portfolio Ready<span class="badge bg-tertiary">new</span></a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/maintainance.php">Portfolio Ready<span class="badge bg-tertiary">new</span></a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="soon" target="_blank">Astra Search</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/soon.php" target="_blank">Astra Search</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="soon" target="_blank">Astra Kilimo <span class="badge bg-tertiary">new</span></a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/soon.php" target="_blank">Astra Kilimo <span class="badge bg-tertiary">new</span></a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block mb-3 text-primary">Support</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="contact" target="_blank">Support center </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/contact.php" target="_blank">Support center </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="maintainance" target="_blank">Support topic<span class="badge bg-tertiary">soon</span></a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/maintainance" target="_blank">Support topic<span class="badge bg-tertiary">soon</span></a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block mb-3 text-primary">Blog</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="blog" target="_blank">Blog page</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/blog.php" target="_blank">Blog page</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="blog_single" target="_blank">Blog post</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/blog-single.php" target="_blank">Blog post</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -146,29 +149,29 @@
                                     <h6 class="d-block mb-3 text-primary">Tools & Tech</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="languages">Languages </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/languages.php">Languages </a>
                                         </li>                                        
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="version">Version Control</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/version.php">Version Control</a>
                                         </li>
 
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="hosting" target="_blank">Hosting </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/hosting.php" target="_blank">Hosting </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="databases" target="_blank">Databases </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/databases.php" target="_blank">Databases </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="ui_tools">UI/UX Design</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/ui_tools.php">UI/UX Design</a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block mb-3 text-primary">AI & Quantum</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="ai_tools" target="_blank">AI tools </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/ai_tools.php" target="_blank">AI tools </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="quantum" target="_blank"> Quantum ML </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/quantum.php" target="_blank"> Quantum ML </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -198,19 +201,19 @@
                                             <a class="megamenu-link" href="#" target="_blank">Services</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="gallery" target="_blank">Gallery</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/gallery.php" target="_blank">Gallery</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="profile" target="_blank">Profile</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/profile.php" target="_blank">Profile</a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block mb-3 text-primary">Blog</h6>
                                     <ul class="list-style-none">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="blog" target="_blank">Blog page</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/blog.php" target="_blank">Blog page</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="blog_single" target="_blank">Blog post</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/blog-single.php" target="_blank">Blog post</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -218,16 +221,16 @@
                                     <h6 class="d-block mb-3 text-primary">Career</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="careers" target="_blank">Careers</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/careers.php" target="_blank">Careers</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="careers" target="_blank">Career Single</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/careers.php" target="_blank">Career Single</a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block mb-3 text-primary">Legal</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="terms" target="_blank">Terms of service</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/terms.php" target="_blank">Terms of service</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -249,29 +252,29 @@
                                     <h6 class="d-block mb-3 text-primary">Tools & Tech</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="languages">Languages </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/languages.php">Languages </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="version">Version Control</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/version.php">Version Control</a>
                                         </li>
 
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="hosting" target="_blank">Hosting </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/hosting.php" target="_blank">Hosting </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="databases" target="_blank">Databases </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/databases.php" target="_blank">Databases </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="ui_tools">UI/UX Design</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/ui_tools.php">UI/UX Design</a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block mb-3 text-primary">AI & Quantum</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="ai_tools" target="_blank">AI tools </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/ai_tools.php" target="_blank">AI tools </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="quantum" target="_blank"> Quantum ML </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/quantum.php" target="_blank"> Quantum ML </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -294,7 +297,7 @@
                                             <span class="small">Examples and guides</span>
                                         </div>
                                     </a>
-                                    <a href="contact" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                    <a href="<?= $baseUrl ?>/contact.php" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
                                         <span class="icon icon-sm"><span class="fas fa-microphone-alt"></span></span>
                                         <div class="ms-4">
                                             <span class="d-block font-small fw-bold mb-0">Support</span>
@@ -322,7 +325,7 @@
 
 
 <!-- Preloader -->
-<!-- <div class="preloader bg-dark flex-column justify-content-center align-items-center">
+<div class="preloader bg-dark flex-column justify-content-center align-items-center">
 <div class="ui-abstergo">
   <div class="abstergo-loader">
     <div></div>
@@ -336,7 +339,7 @@
     <div class="ui-dot"></div>
   </div>
 </div>
-</div> -->
+</div>
 
 
 <style>

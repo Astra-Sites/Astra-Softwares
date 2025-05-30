@@ -59,9 +59,9 @@ $totalPages = ceil($totalImages / $perPage);
             <span class="text-white fs-5 fw-semibold">View</span>
           </div>
         </div>
-      </div>
-    <?php endforeach; ?>
   </div>
+    <?php endforeach; ?>
+</div>
 
   <style>
     .gallery-img {

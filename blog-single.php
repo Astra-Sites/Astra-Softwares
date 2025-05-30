@@ -1,8 +1,11 @@
-{% extends "home/layout.html" %}
-{% load static %}
 
 
-  {% block content %}
+
+<?php
+$pageTitle  = "Astra Softwares | Top News & Updates";
+include ('/includes/header.php');
+?>
+
    <section class="section-header pb-5 pb-sm-7 bg-primary text-white">
       <div class="container">
          <div class="row justify-content-center">
@@ -158,11 +161,16 @@
 
 
 
-   <!-- contact form -->
-         {% include 'home/includes/contact_form.html
-   <!-- end of contact form -->
+<!-- contact form -->
+      <?php
+      include './includes/contact_form.php'
+      ?>
+<!--End of Contact form -->
 
 
 
 
-{% endblock %}
+<?php
+include ('./includes/footer.php');
+?>
+  

@@ -1,11 +1,10 @@
-{% extends 'home/layout.html
-{% load static %}
 
-{% block title %}
-<title>Astra Softwares | Terms of Service</title>
-{% endblock %}
 
-{% block content %}
+   <?php
+   $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+   include ('./includes/header.php');
+   ?>
+
    <!-- Hero -->
    <section class="section-header bg-dark pb-9 pb-lg-12 mb-4 mb-lg-6">
       <div class="container">
@@ -503,5 +502,10 @@
          </div>
       </div>
    </section>
-   {% endblock %}
+  
+<?php
+include ('./includes/footer.php');
+?>
+
+
 
