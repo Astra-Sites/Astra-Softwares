@@ -91,7 +91,7 @@
                         <p class="mb-4 lead fw-bold">Custom software for businesses of all sizes</p>
                         <p class="mb-4">Our services include website development, mobile apps, e-commerce platforms, CRM systems, and API integrations. We also develop custom systems for restaurants, churches, schools, and other industries.
                              Our goal is to deliver reliable and easy-to-use software that fits your specific needs</p>
-                        <a href="core:web_portfolio" target="_blank"
+                        <a href="web_portfolio.php" target="_blank"
                             class="btn btn-outline-primary"><span class="fas fa-book me-2"></span> See our Work</a>
                     </div>
                     <div class="col-12 col-lg-6 order-lg-1">
