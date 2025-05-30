@@ -325,7 +325,7 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
 
 
 <!-- Preloader -->
-<div class="preloader bg-dark flex-column justify-content-center align-items-center">
+<!-- <div class="preloader bg-dark flex-column justify-content-center align-items-center">
 <div class="ui-abstergo">
   <div class="abstergo-loader">
     <div></div>
@@ -339,7 +339,7 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
     <div class="ui-dot"></div>
   </div>
 </div>
-</div>
+</div> -->
 
 
 <style>

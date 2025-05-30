@@ -1,14 +1,15 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;// Import PHPMailer classes into the global namespace
-use PHPMailer\PHPMailer\Exception;// Import PHPMailer classes into the global namespace
-Use Dotenv\Dotenv;// Import Dotenv classes into the global namespace
 
 // Load Composer's autoloader
-include '../vendor/autoload.php';
+include 'vendor/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer; // Import PHPMailer classes into the global namespace
+use PHPMailer\PHPMailer\Exception; // Import PHPMailer classes into the global namespace
+Use Dotenv\Dotenv; // Import Dotenv classes into the global namespace
 
 
 // Load environment variables
-$dotenv = Dotenv::createImmutable('../');
+$dotenv = Dotenv::createImmutable('./');
 $dotenv->load();
 
 
@@ -35,16 +36,63 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->isHTML(true);
         $mail->Subject = 'New Contact Form Submission';
-        $mail->Body = "
-            <h2>Contact Form Submission</h2>
-            <p><strong>Name:</strong> {$name}</p>
-            <p><strong>Email:</strong> {$email}</p>
-            <p><strong>Message:</strong><br>{$message}</p>
-        ";
+        $mail->Body = '
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contact Form Submission</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            </head>
+            <body style="background-color:#f8f9fa;">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow border-0">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h2>Contact Form Submission</h2>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Name:</strong> <span class="text-dark">'.htmlspecialchars($name).'</span></p>
+                        <p><strong>Email:</strong> <span class="text-dark">'.htmlspecialchars($email).'</span></p>
+                        <p><strong>Message:</strong></p>
+                        <div class="alert alert-secondary" style="white-space: pre-line;">'.nl2br(htmlspecialchars($message)).'</div>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <small>Sent from Astra Softwares Contact Form</small>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </body>
+            </html>
+        ';
         $mail->AltBody = "Name: {$name}\nEmail: {$email}\nMessage:\n{$message}";
 
         $mail->send();
-        echo "<script>alert('Your message has been sent successfully!');</script>";
+        // Bootstrap Toast markup
+        echo '
+        <div aria-live="polite" aria-atomic="true" class="position-fixed bottom-0 end-0 p-3 " style="z-index: 1080;">
+            <div class="toast align-items-center text-bg-success border-0 show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex bg-success">
+                    <div class="toast-body  text-white">
+                        Your message has been sent successfully!
+                    </div>
+                    <button type="button" class="btn-close btn-close-dark me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var toastEl = document.querySelector(".toast");
+            if (toastEl) {
+                var toast = new bootstrap.Toast(toastEl);
+                toast.show();
+            }
+        </script>
+        ';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
