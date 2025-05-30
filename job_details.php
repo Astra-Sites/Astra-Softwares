@@ -23,10 +23,10 @@ $benefits = array_filter(array_map('trim', explode("\n", $job['benefits'])));
 
 
 
- <?php
-   $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
-   include ('./includes/header.php');
- ?>
+<?php
+$pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+include ('./includes/header.php');
+?>
 
 
 <!-- Hero -->

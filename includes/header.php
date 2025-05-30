@@ -117,13 +117,13 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
                                     <h6 class="d-block mb-3 text-primary">Landings</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/maintainance.php">Portfolio Ready<span class="badge bg-tertiary">new</span></a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/includes/maintain.php">Portfolio Ready<span class="badge bg-tertiary">new</span></a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/soon.php" target="_blank">Astra Search</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/includes/soon.php" target="_blank">Astra Search</a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/soon.php" target="_blank">Astra Kilimo <span class="badge bg-tertiary">new</span></a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/includes/soon.php" target="_blank">Astra Kilimo <span class="badge bg-tertiary">new</span></a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block mb-3 text-primary">Support</h6>
@@ -132,7 +132,7 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
                                             <a class="megamenu-link" href="<?= $baseUrl ?>/contact.php" target="_blank">Support center </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/maintainance" target="_blank">Support topic<span class="badge bg-tertiary">soon</span></a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/includes/maintain.php" target="_blank">Support topic<span class="badge bg-tertiary">soon</span></a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block mb-3 text-primary">Blog</h6>
@@ -252,29 +252,29 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
                                     <h6 class="d-block mb-3 text-primary">Tools & Tech</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/languages.php">Languages </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/languages.php">Languages </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/version.php">Version Control</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/version.php">Version Control</a>
                                         </li>
 
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/hosting.php" target="_blank">Hosting </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/hosting.php" target="_blank">Hosting </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/databases.php" target="_blank">Databases </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/databases.php" target="_blank">Databases </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/ui_tools.php">UI/UX Design</a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/ui_tools.php">UI/UX Design</a>
                                         </li>
                                     </ul>
                                     <h6 class="d-block mb-3 text-primary">AI & Quantum</h6>
                                     <ul class="list-style-none mb-4">
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/ai_tools.php" target="_blank">AI tools </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/ai_tools.php" target="_blank">AI tools </a>
                                         </li>
                                         <li class="mb-2 megamenu-item">
-                                            <a class="megamenu-link" href="<?= $baseUrl ?>/quantum.php" target="_blank"> Quantum ML </a>
+                                            <a class="megamenu-link" href="<?= $baseUrl ?>/tech/quantum.php" target="_blank"> Quantum ML </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -290,7 +290,7 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
                         <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="supportDropdown">
                             <div class="col-auto px-0">
                                 <div class="list-group list-group-flush">
-                                    <a href="soon" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                    <a href="includes/soon.php" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
                                         <span class="icon icon-sm"><span class="fas fa-file-alt"></span></span>
                                         <div class="ms-4">
                                             <span class="d-block font-small fw-bold mb-0">Documentation<span class="badge badge-sm badge-secondary ms-2">v3.1</span></span>
@@ -311,8 +311,8 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
                 </ul>
             </div>
             <div class="d-flex align-items-center">
-                <a href="contact" target="_blank" class="btn btn-outline-gray-100 d-none d-lg-inline me-md-3"><span class="fas fa-book me-2"></span> Start a Project</a>
-                <a href="contact" target="_blank" class="btn btn-tertiary"><i class="fas fa-comments me-2"></i> Talk to Us</a>
+                <a href="<?= $baseUrl ?>/contact.php" target="_blank" class="btn btn-outline-gray-100 d-none d-lg-inline me-md-3"><span class="fas fa-book me-2"></span> Start a Project</a>
+                <a href="<?= $baseUrl ?>/contact.php" target="_blank" class="btn btn-tertiary"><i class="fas fa-comments me-2"></i> Talk to Us</a>
                 <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
