@@ -197,7 +197,7 @@
                                 </p>
                             </div>
                             <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
-                                <a href="{%  url 'home:contact" class="btn btn-primary">
+                                <a href="contact.php" class="btn btn-primary">
                                     <span class="me-1">
                                         <span class="fas fa-headphones"></span>
                                     </span>
