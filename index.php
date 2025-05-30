@@ -1,7 +1,7 @@
 
  <?php
    
-   $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+   $pageTitle  = "Custom Software & AI Solutions for Global Businesses | Astra Softwares";
    include ('./includes/header.php');
 
  ?>
@@ -19,12 +19,12 @@
                     <h2 class="lead fw-normal text-muted mb-4 px-lg-10">We are an AI company focused on developing intelligent applications, automation tools, and scalable systems that empower businesses and organizations to thrive in the digital space.</h2>
                     <!-- Button Modal -->
                     <div class="d-flex justify-content-center align-items-center mb-5">
-                        <a href="home:about" class="btn btn-tertiary mb-3 mt-2 me-2 me-md-3 animate-up-2"><span
+                        <a href="about.php" class="btn btn-tertiary mb-3 mt-2 me-2 me-md-3 animate-up-2"><span
                                 class="fas fa-th-large me-2"></span> <span class="d-none d-md-inline">More About us </span> <span class="d-md-none">Components</span></a>
                         <a class="github-button" href="https://github.com/astrasoftwares"
                             data-color-scheme="no-preference: dark; light: light; dark: light;"
                             data-icon="octicon-star" data-size="large" data-show-count="true"
-                            aria-label="Star themesberg/pixel-bootstrap-ui-kit on GitHub">Star</a>
+                            aria-label="Star Astrasoftwares on GitHub">Star</a>
                     </div>
                     <div class="d-flex justify-content-center flex-column mb-6 mb-lg-5">
                         <a href="#" class="d-block text-center mx-auto" target="_blank">
@@ -152,36 +152,36 @@
             <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
                 <div class="card shadow">
                     <img src="static/assets/img/blog/code.png" class="card-img-top rounded-top"
-                        alt="Themesberg office">
+                        alt="Astra Softwares Updates/ news">
                     <div class="card-body">
                         <span class="h6 icon-tertiary small"><span class="fas fa-medal me-2"></span>Awards</span>
                         <h3 class="h5 card-title mt-3">We partnered up with Code.org</h3>
                         <p class="card-text">We’re proud to collaborate with Code.org to promote coding and computer science education for students everywhere.</p>
-                        <a href="home:blog" class="btn btn-primary btn-sm">Learn More</a>
+                        <a href="blog.php" class="btn btn-primary btn-sm">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
                 <div class="card shadow">
                     <img src="static/assets/img/blog/salama.jpeg" class="card-img-top rounded-top"
-                        alt="Themesberg office">
+                        alt="Astra Softwares Updates/ news">
                     <div class="card-body">
                         <span class="h6 icon-tertiary small"><span class="fas fa-medal me-2"></span>Awards</span>
                         <h3 class="h5 card-title mt-3">We partnered up with Salama Farm</h3>
                         <p class="card-text">We’ve partnered with Salama Farm to improve their software systems and support agricultural innovation through AI-driven solutions.</p>
-                        <a href="home:blog" class="btn btn-primary btn-sm">Learn More</a>
+                        <a href="blog.php" class="btn btn-primary btn-sm">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
                 <div class="card shadow">
                     <img src="static/assets/img/blog/fremax.png" class="card-img-top rounded-top"
-                        alt="Themesberg office">
+                        alt="Astra Softwares Updates/ news">
                     <div class="card-body">
                         <span class="h6 icon-tertiary small"><span class="fas fa-medal me-2"></span>Awards</span>
                         <h3 class="h5 card-title mt-3">We partnered up with Fremax</h3>
                         <p class="card-text">Through our partnership with Fremax Graphics, clients get a full package — from custom software to professional branding — all in one place.</p>
-                        <a href="home:blog" class="btn btn-primary btn-sm">Learn More</a>
+                        <a href="blog.php" class="btn btn-primary btn-sm">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@
                                         class="fas fa-times-circle"></span></span> Commercial Use</li>
                         </ul>
                     </div>
-                    <a href="accounts:maintainance" target="_blank" class="btn btn-outline-dark w-100 mb-3"><i class="fas fa-cloud-download-alt me-2"></i>Request Access</a>
+                    <a href="./includes/maintain.php" target="_blank" class="btn btn-outline-dark w-100 mb-3"><i class="fas fa-cloud-download-alt me-2"></i>Request Access</a>
                     <!-- End Content -->
                 </div>
             </div>
@@ -305,7 +305,7 @@
                                     class="icon-success"><span class="fas fa-check-circle"></span></span> Commercial Use</li>
                         </ul>
                     </div>
-                    <a href="accounts:maintainance" target="_blank" class="btn btn-tertiary w-100 mb-3">Contribute on GitHub <i class="fas fa-external-link-square-alt ms-2"></i></a>
+                    <a href="includes/soon.php" target="_blank" class="btn btn-tertiary w-100 mb-3">Contribute on GitHub <i class="fas fa-external-link-square-alt ms-2"></i></a>
                     <!-- End Content -->
                 </div>
             </div>

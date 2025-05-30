@@ -2,7 +2,7 @@
 
 <?php
 
-$pageTitle  = "Astra Softwares | News & Updates";
+$pageTitle  = "AI Innovation, Software Trends & Dev Insights | Astra Trends Blog";
 include ('./includes/header.php');
 ?>
 

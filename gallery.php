@@ -161,7 +161,7 @@ $totalPages = ceil($totalImages / $perPage);
   <div class="row">
     <div class="col-12">
       <h2 class="text-center mb-4">Media Terms and Conditions</h2>
-      <p class="text-muted text-center">Please read our <a href="home:terms#event-participation-media-usage">Terms and Conditions</a> for using media from this gallery.</p>
+      <p class="text-muted text-center">Please read our <a href="terms.php#event-participation-media-usage">Terms and Conditions</a> for using media from this gallery.</p>
     </div>
   </div>
 </div>

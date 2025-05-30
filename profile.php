@@ -1,6 +1,6 @@
 
      <?php
-      $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+      $pageTitle  = "Astra Softwares | Our Company Profile";
       include ('./includes/header.php');
       ?>
 
@@ -108,7 +108,7 @@
                         <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fas fa-code-branch"></span></span>
                         <div class="media-body d-block">
                            <span class="h5">Tech Stack:</span>
-                           <div class="text-gray mt-2">Python, ReactJs, PHP, NodeJs, Bootstrap, Django, MYSQL  <a href="home:languages"><span class="badge bg-tertiary">more</span></a></div>
+                           <div class="text-gray mt-2">Python, ReactJs, PHP, NodeJs, Bootstrap, Django, MYSQL  <a href="tech/languages.php"><span class="badge bg-tertiary">more</span></a></div>
                         </div>
                      </div>
                   </li>
@@ -123,7 +123,7 @@
                         <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fa fa-robot"></span></span>
                         <div class="media-body d-block">
                            <span class="h5">AI Stack:</span>
-                           <div class="text-gray mt-2">Gemini, Kaggle, Elevenllabs, AssembyAi, LLamma, OpenAI, Deepseek,  <a href="home:ai_tools"><span class="badge bg-tertiary">more</span></a></div>
+                           <div class="text-gray mt-2">Gemini, Kaggle, Elevenllabs, AssembyAi, LLamma, OpenAI, Deepseek,  <a href="tech/ai_tools.php"><span class="badge bg-tertiary">more</span></a></div>
                         </div>
                      </div>
                   </li>
@@ -141,7 +141,7 @@
                         <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fas fa-globe"></span></span>
                         <div class="media-body d-block">
                            <span class="h5">QML Stack:</span>
-                           <div class="text-gray mt-2">Cirq, D-waves, Qutech, Qiskit, Q#<a href="home:quantum"><span class="badge bg-tertiary">more</span></a></div>
+                           <div class="text-gray mt-2">Cirq, D-waves, Qutech, Qiskit, Q#<a href="tech/quantum.php"><span class="badge bg-tertiary">more</span></a></div>
                         </div>
                      </div>
                   </li>

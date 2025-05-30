@@ -1,5 +1,5 @@
 <?php
-    $pageTitle  = "Astra Softwares | Version Control Stack";
+    $pageTitle  = "Astra Softwares | Artificial Inteligence Stack";
     include ('../includes/header.php');
 ?>
 

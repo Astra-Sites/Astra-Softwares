@@ -1,6 +1,6 @@
         
         <?php
-        $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+        $pageTitle  = "About Astra Softwares – Experts in Software Engineering & AI Innovation";
         include ('./includes/header.php');
         ?>
 
@@ -12,7 +12,7 @@
                   <div class="col-12 col-md-7 col-lg-6 text-center text-md-left">
                         <h1 class="display-2 mb-4">About <br class="d-none d-md-inline"> Astra Softwares</h1>
                         <p class="lead mb-4 text-muted">We are a software and AI company dedicated to building smart solutions for businesses, education, and everyday challenges. From custom development to AI-powered tools and open-source projects, our work is focused on impact, innovation, and accessibility.</p>
-                        <a href="home:profile" class="btn btn-tertiary me-3 animate-up-2">Our Profile <span class="ms-2"><span class="fas fa-arrow-right"></span></span></a>
+                        <a href="profile.php" class="btn btn-tertiary me-3 animate-up-2">Our Profile <span class="ms-2"><span class="fas fa-arrow-right"></span></span></a>
                     </div>
                   <div class="col-12 col-md-5 d-none d-md-block text-center"><img src="../../static/assets/img/illustrations/about-illustration.svg" alt=""></div>
                </div>

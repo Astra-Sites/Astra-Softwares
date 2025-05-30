@@ -1,7 +1,7 @@
 
 
    <?php
-   $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+   $pageTitle  = "Astra Softwares | Terms and Conditions";
    include ('./includes/header.php');
    ?>
 

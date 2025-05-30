@@ -24,7 +24,7 @@ $benefits = array_filter(array_map('trim', explode("\n", $job['benefits'])));
 
 
 <?php
-$pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+$pageTitle  = "We are Looking for " . htmlspecialchars($job['job_title']);
 include ('./includes/header.php');
 ?>
 

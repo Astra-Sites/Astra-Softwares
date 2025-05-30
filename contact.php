@@ -1,6 +1,6 @@
 
         <?php
-        $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+        $pageTitle  = "Get in Touch – Build AI & Software Solutions with Astra Softwares";
         include ('./includes/header.php');
         ?>
 
