@@ -1,0 +1,199 @@
+
+     <?php
+      $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+      include ('./includes/header.php');
+      ?>
+
+
+    <!-- Page Header -->
+    <div class="page-header min-vh-75  relative bg-primary" style="height: 100px;">
+        
+
+    </div>
+    <!-- End of Page Header -->
+
+   <!-- Hero -->
+   <div class="section-header section-image bg-white pb-0">
+      <div class="container z-2">
+         <div class="row my-5 justify-content-center text-center">
+            <div class="col-lg-8">
+               <img src="static/assets/img/brand/logo.png" class="rounded-circle img-thumbnail image-lg border-secondary p-2" alt="Joseph Avatar">
+               <h1 class="my-4">Astra Softwares</h1>
+               <h2 class="h5 fw-normal text-gray mb-4"><span class="fas fa-map-marker-alt me-2"></span>Nairobi, Kenya</h2>
+               <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
+                  <li><a href="#" target="_blank" aria-label="facebook social link" class="icon icon-sm text-facebook me-3"><span class="fab fa-facebook-f"></span></a></li>
+                  <li><a href="#" target="_blank" aria-label="twitter social link" class="icon icon-sm text-twitter me-3"><span class="fab fa-twitter"></span></a></li>
+                  <li><a href="#" target="_blank" aria-label="slack social link" class="icon icon-sm text-slack me-3"><span class="fab fa-slack-hash"></span></a></li>
+                  <li><a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-sm text-dribbble"><span class="fab fa-dribbble"></span></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- End of Hero section --><!-- Section -->
+   <div class="section section-md pt-0">
+      <div class="container">
+         <div class="row justify-content-center mt-6">
+            <div class="col-md-12 col-lg-8">
+               <div class="timeline timeline-one">
+                  <!-- Timeline Item 1 -->
+                  <div class="timeline-item">
+                     <span class="text-gray">Present</span>
+                     <h3 class="h4 my-2">Introduction to Quantum Machine Learning</h3>
+                     <p>Always pushing the boundaries of innovation, Astra Softwares began exploring Quantum Machine Learning (QML)—the fusion of quantum computing and AI. This emerging interest reflects the company’s drive to stay ahead of the curve and prepare for the next evolution in computing, aiming to incorporate QML concepts into future projects and research initiatives.</p>
+                     <img class="mt-2" src="static/assets/img/signature.svg" alt="signature" width="100">
+                  </div>
+                  <!-- Timeline Item 3 -->
+                  <div class="timeline-item">
+                     <span class="text-gray">2025</span>
+                     <h3 class="h4 my-2">Partnering With Fremax Graphics</h3>
+                     <img src="static/assets/img/illustrations/fremax.jpg" class="image-xs my-4" style="height: 4rem;" alt="Fremax Graphics Illutration">
+                     <p>Through our partnership with Fremax Graphics, clients get a full package — from custom software to professional branding — all in one package.</p>
+                  </div>
+
+                  <!-- Timeline Item 2 -->
+                  <div class="timeline-item">
+                     <span class="text-gray">2024</span>
+                     <h3 class="h4 my-2">Partnering with Code.org</h3>
+                     <img src="static/assets/img/blog/code.org.png" class="image-xs my-2" style="height: 4rem;" alt="Code.org logo">
+                     <p>In a major leap toward educational impact, Astra Softwares joined hands with Code.org, gaining verification as an official teacher. This partnership marked a commitment to accessible, quality tech education, allowing Astra to contribute to global digital literacy while mentoring students in foundational coding and development principles.</p>
+                  </div>
+                  <!-- Timeline Item 3 -->
+                  <div class="timeline-item">
+                     <span class="text-gray">2024</span>
+                     <h3 class="h4 my-2">Portfolio Ready</h3>
+                     <img src="static/assets/img/illustrations/humanoid.png" class="image-xs my-4" style="height: 4rem;" alt="Portfolio Ready Illutration">
+                     <p>Seeing a growing need for practical, hands-on programming education, Astra Softwares introduced Portfolio Ready—an AI-enhanced learning platform designed to guide beginners and advanced learners through real-world development skills. The platform features an AI tutor, project-based curriculum, and personalized guidance, setting learners on a path to becoming job-ready developers.</p>
+                  </div>
+                  <!-- Timeline Item 4 -->
+                  <div class="timeline-item">
+                     <span class="text-gray">2023</span>
+                     <h3 class="h4 my-2">An idea became a business</h3>
+                     <img src="static/assets/img/illustrations/success.jpg" class="image-xs my-2" style="height: 4rem;" alt="School logo">
+                     <p>What began as a bold idea to revolutionize the digital space quickly evolved into a full-fledged business. Astra Softwares was founded with a mission to empower businesses and Organizations through cutting-edge Software and AI Solutions. Built on Tech for Good and a passion for innovation, Astra Softwares laid its foundation on quality, purpose-driven services, and a global vision.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- End of section -->
+   <div class="section section-lg bg-gray-200">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 col-lg-4">
+               <!-- List Group -->
+               <ul class="list-group list-group-transparent list-group-flush list-group-borderless mb-0">
+                  <li class="list-group-item rounded-0 py-4">
+                     <div class="d-flex">
+                        <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fas fa-globe-europe"></span></span>
+                        <div class="media-body d-block">
+                           <span class="h5">Sector:</span>
+                           <div class="text-gray mt-2">AI & Softwares Development</div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="list-group-item rounded-0 py-4">
+                     <div class="d-flex">
+                        <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fas fa-fill-drip"></span></span>
+                        <div class="media-body d-block">
+                           <span class="h5">Core Competencies:</span>
+                           <div class="text-gray mt-2">AI Engineering, Quantum Machine Learning, Full Stack Development</a></div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="list-group-item rounded-0 py-4">
+                     <div class="d-flex">
+                        <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fas fa-code-branch"></span></span>
+                        <div class="media-body d-block">
+                           <span class="h5">Tech Stack:</span>
+                           <div class="text-gray mt-2">Python, ReactJs, PHP, NodeJs, Bootstrap, Django, MYSQL  <a href="home:languages"><span class="badge bg-tertiary">more</span></a></div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <!-- End List Group -->
+            </div>
+            <div class="col-md-6 col-lg-4">
+               <!-- List Group -->
+               <ul class="list-group list-group-transparent list-group-flush list-group-borderless mb-0">
+                  <li class="list-group-item rounded-0 py-4">
+                     <div class="d-flex">
+                        <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fa fa-robot"></span></span>
+                        <div class="media-body d-block">
+                           <span class="h5">AI Stack:</span>
+                           <div class="text-gray mt-2">Gemini, Kaggle, Elevenllabs, AssembyAi, LLamma, OpenAI, Deepseek,  <a href="home:ai_tools"><span class="badge bg-tertiary">more</span></a></div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="list-group-item rounded-0 py-4">
+                     <div class="d-flex">
+                        <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fas fa-briefcase"></span></span>
+                        <div class="media-body d-block">
+                           <span class="h5">Organizations & Partners:</span>
+                           <div class="text-gray mt-2">Code.org, Fremax Graphics, Salama Farm </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="list-group-item rounded-0 py-4">
+                     <div class="d-flex">
+                        <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fas fa-globe"></span></span>
+                        <div class="media-body d-block">
+                           <span class="h5">QML Stack:</span>
+                           <div class="text-gray mt-2">Cirq, D-waves, Qutech, Qiskit, Q#<a href="home:quantum"><span class="badge bg-tertiary">more</span></a></div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <!-- End List Group -->
+            </div>
+            <div class="col-md-6 col-lg-4">
+               <!-- List Group -->
+               <ul class="list-group list-group-transparent list-group-flush border-0 mb-0">
+                  <li class="list-group-item rounded-0 py-4">
+                     <div class="d-flex">
+                        <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="far fa-paper-plane"></span></span>
+                        <div class="media-body d-block">
+                           <span class="h5">Email:</span>
+                           <div class="text-gray mt-2"><a href="#">info@astrasoft.tech</a></div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="list-group-item rounded-0 py-4">
+                     <div class="d-flex">
+                        <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fas fa-mobile-alt"></span></span>
+                        <div class="media-body d-block">
+                           <span class="h5">Phone number:</span>
+                           <div class="text-gray mt-2">+(254) 727 405667</div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="list-group-item rounded-0 py-4">
+                     <div class="d-flex">
+                        <span class="icon icon-sm me-3 d-none d-xl-inline lh-200"><span class="fas fa-map-pin"></span></span>
+                        <div class="media-body d-block">
+                           <span class="h5">Location:</span>
+                           <div class="text-gray mt-2">Nairobi, Kenya</div>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <!-- End List Group -->
+            </div>
+         </div>
+      </div>
+   </div>
+   
+
+
+<!-- contact form -->
+      <?php
+      include './includes/contact_form.php'
+      ?>
+<!--End of Contact form -->
+
+
+<?php
+include ('./includes/footer.php');
+?>

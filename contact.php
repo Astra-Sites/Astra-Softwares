@@ -1,0 +1,152 @@
+
+        <?php
+        $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+        include ('./includes/header.php');
+        ?>
+
+
+        <!-- Hero section -->
+        <section class="section section-header pb-11 bg-primary text-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-8 text-center">
+                        <h1 class="display-2 mb-3">Get in touch today</h1>
+                        <p class="lead">Have a new project in mind? Drop us a line about your project needs, we answer same day.</p>        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section -->
+        <div class="section py-0">
+            <div class="container mt-n10">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4069485901057!2d36.82501123873194!3d-1.2856671318412052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f112834afaba7%3A0x13d7f7280ed5fda6!2sAmbassadeur%20Hotel!5e0!3m2!1sen!2ske!4v1748011566018!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                        <iframe class="map rounded" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1248.872794287873!2d36.82393835512598!3d-1.2857046733138655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f112834afaba7%3A0x13d7f7280ed5fda6!2sAmbassadeur%20Hotel!5e1!3m2!1sen!2ske!4v1748011222923!5m2!1sen!2ske"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section -->
+        <section class="section section-lg pt-6">
+            <div class="container">
+
+
+            <!-- contact form -->
+                <?php
+                include './includes/contact_form.php'
+                ?>
+            <!--End of Contact form -->
+
+
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2>Our support team</h2>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="card border-0 text-center">
+                            <div class="card-header border-0 bg-white">
+                                <img src="static/assets/img/team/eliza.jpg" class="card-img-top rounded shadow border-0" alt="Elizabeth Avatar">  
+                            </div>
+                            <div class="card-body">
+                                <span class="card-subtitle text-gray fw-normal">Sales</span>
+                                <h3 class="h4 card-title mt-2">Elizabeth Onyango</h3>
+                                <ul class="list-unstyled d-flex justify-content-center mt-3">
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-sm icon-facebook me-3">
+                                            <span class="fab fa-facebook-f"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-sm icon-twitter me-3">
+                                            <span class="fab fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="slack social link" class="icon icon-sm icon-slack me-3">
+                                            <span class="fab fa-slack-hash"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-sm icon-dribbble me-3">
+                                            <span class="fab fa-dribbble"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="card border-0 text-center">
+                            <div class="card-header border-0 bg-white">
+                                <img src="static/assets/img/team/denis.jpg" class="card-img-top rounded shadow border-0" alt="Denis Avatar">
+                            </div>
+                            <div class="card-body">
+                                <span class="card-subtitle text-gray fw-normal">Marketing</span>
+                                <h3 class="h4 card-title mt-2">Denis Pius</h3>
+                                <ul class="list-unstyled d-flex justify-content-center mt-3">
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-sm icon-facebook me-3">
+                                            <span class="fab fa-facebook-f"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-sm icon-twitter me-3">
+                                            <span class="fab fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="slack social link" class="icon icon-sm icon-slack me-3">
+                                            <span class="fab fa-slack-hash"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-sm icon-dribbble me-3">
+                                            <span class="fab fa-dribbble"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card border-0 text-center">
+                            <div class="card-header border-0 bg-white">
+                                <img src="static/assets/img/team/samwel.jpg" class="card-img-top rounded shadow border-0" alt="Samwel Avatar">
+                            </div>
+                            <div class="card-body">
+                                <span class="card-subtitle text-gray fw-normal">Customer Support</span>
+                                <h3 class="h4 card-title mt-2">Samwel Oduor</h3>
+                                <ul class="list-unstyled d-flex justify-content-center mt-3">
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-sm icon-facebook me-3">
+                                            <span class="fas fa-phone"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-sm icon-twitter me-3">
+                                            <span class="fab fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="mail social link" class="icon icon-sm icon-slack me-3">
+                                            <span class="fas fa-envelope"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="whatsapp social link" class="icon icon-sm icon-whatsapp me-3">
+                                            <span class="fab fa-whatsapp"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <?php
+        include ('./includes/footer.php');
+        ?>
+
