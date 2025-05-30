@@ -1,9 +1,10 @@
         <?php
-            $pageTitle  = "Astra Softwares | Technology Languages Stack";
+            $pageTitle  = "Astra Softwares | Our Technology Languages Stack";
             include ('../includes/header.php');
         ?>
 
         <?php
+        
 // Define the image directory
 
 $imageFolder =  '../static/assets/img/logos/languages/';

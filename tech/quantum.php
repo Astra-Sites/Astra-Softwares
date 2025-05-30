@@ -1,6 +1,6 @@
 
 <?php
-    $pageTitle  = "Astra Softwares | Quantum Computing  Stack";
+    $pageTitle  = "Astra Softwares | Our Quantum Computing  Stack";
     include ('../includes/header.php');
 ?>
 

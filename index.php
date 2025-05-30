@@ -1,7 +1,7 @@
 
  <?php
    
-   $pageTitle  = "Custom Software & AI Solutions for Global Businesses | Astra Softwares";
+   $pageTitle  = "Custom Software & AI Solutions for Global & Local Businesses | Astra Softwares";
    include ('./includes/header.php');
 
  ?>
@@ -16,7 +16,7 @@
                         <img src="static/assets/img/brand/logo1.png" width="700" height="622" class="d-block my-1" alt="Logo" style="max-width:100%; height:auto; filter: invert(2) brightness(100);" >
                     </div>
                     <h1 class="fw-bolder display-2">We are The Future!</h1>
-                    <h2 class="lead fw-normal text-muted mb-4 px-lg-10">We are an AI company focused on developing intelligent applications, automation tools, and scalable systems that empower businesses and organizations to thrive in the digital space.</h2>
+                    <h2 class="lead fw-normal text-muted mb-4 px-lg-10">We are an AI & Software company focused on developing intelligent applications, automation tools, and scalable systems that empower businesses and organizations to thrive in the digital space.</h2>
                     <!-- Button Modal -->
                     <div class="d-flex justify-content-center align-items-center mb-5">
                         <a href="about.php" class="btn btn-tertiary mb-3 mt-2 me-2 me-md-3 animate-up-2"><span
@@ -89,8 +89,7 @@
                     <div class="col-12 col-lg-5 mb-5 mb-lg-0 order-lg-2">
                         <h2 class="h1">Software Development</h2>
                         <p class="mb-4 lead fw-bold">Custom software for businesses of all sizes</p>
-                        <p class="mb-4">Our services include website development, mobile apps, e-commerce platforms, CRM systems, and API integrations. We also develop custom systems for restaurants, churches, schools, and other industries.
-                             Our goal is to deliver reliable and easy-to-use software that fits your specific needs</p>
+                        <p class="mb-4">Astra Softwares is a software development company that builds modern websites, desktop applications, and mobile apps for clients across the globe. We work with businesses of all sizes, delivering custom solutions that are scalable, user-friendly, and tailored to specific needs. Our mission is to empower organizations through innovative and reliable software that drives growth and efficiency.</p>
                         <a href="web_portfolio.php" target="_blank"
                             class="btn btn-outline-primary"><span class="fas fa-book me-2"></span> See our Work</a>
                     </div>

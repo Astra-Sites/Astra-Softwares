@@ -1,6 +1,6 @@
   <?php 
   include('./config/database.php'); 
-   $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+   $pageTitle  = "Join Our Team: Careers at Astra Softwares";
    include ('./includes/header.php');
   ?>
 

@@ -1,7 +1,7 @@
 
 
   <?php
-  $pageTitle  = "Astra Softwares | Innovative Solutions for your Digital space";
+  $pageTitle  = "Astra Softwares: Team Highlights & Event Snapshots";
   include ('./includes/header.php');
   ?>
 

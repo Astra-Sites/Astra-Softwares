@@ -1,5 +1,5 @@
 <?php
-    $pageTitle  = "Astra Softwares | Database Stack";
+    $pageTitle  = "Astra Softwares | Database Solutions Stack";
     include ('../includes/header.php');
 ?>
 

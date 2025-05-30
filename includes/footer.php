@@ -97,7 +97,7 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
         <hr class="bg-secondary my-3 my-lg-5">
         <div class="row">
             <div class="col mb-md-0">
-                <a href="index" target="_blank" class="d-flex justify-content-center mb-3">
+                <a href="<?= $baseUrl ?>/index.php" target="_blank" class="d-flex justify-content-center mb-3">
                     <img src="<?= $baseUrl ?>/static/assets/img/brand/logo1.png" height="30" class="me-2" alt="astra softwares Logo">
                     <p class="text-white fw-bold footer-logo-text m-0">Astra softwares</p>
                 </a>

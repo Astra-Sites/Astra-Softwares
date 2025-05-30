@@ -3,7 +3,7 @@
 
 <?php
 $pageTitle  = "Astra Softwares | Top News & Updates";
-include ('/includes/header.php');
+include ('includes/header.php');
 ?>
 
    <section class="section-header pb-5 pb-sm-7 bg-primary text-white">

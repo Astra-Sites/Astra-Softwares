@@ -1,6 +1,6 @@
                 
 <?php
-    $pageTitle  = "Astra Softwares | UI/UX Design Stack";
+    $pageTitle  = "Astra Softwares | Our UI/UX Design Stack";
     include ('../includes/header.php');
 ?>
 

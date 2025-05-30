@@ -1,6 +1,6 @@
         
         <?php
-        $pageTitle  = "About Astra Softwares – Experts in Software Engineering & AI Innovation";
+        $pageTitle  = "Who We Are: Leaders in Global AI & Software Development";
         include ('./includes/header.php');
         ?>
 
@@ -29,8 +29,8 @@
                     </div>
                     <div class="col-md-6 col-xl-5 text-center text-md-left">
                         <h2 class="h1 mb-5">Who we are?</h2>
-                        <p class="lead">Astra Softwares is a company that builds software and AI tools for businesses, organizations, and schools. We develop custom systems, offer AI solutions, and provide tech training through our Portfolio Ready program.</p>
-                        <p class="lead">We also support open-source projects and work with partners in areas like education, health, compliance, and agriculture. We are currently working with Code.org to support coding education and with Fremax Graphics to offer clients complete packages that include both software and branding. Our goal is to create useful tools that solve real problems.</p>
+                        <p class="lead">Astra Softwares is a leading AI and software company building intelligent systems and modern applications for a smarter future. We specialize in developing AI-powered solutions—ranging from customer support agents, automation tools, agricultural AI systems, to intelligent educational platforms.</p>
+                        <p class="lead"> In addition to AI, we craft high-quality websites, desktop applications, and mobile apps tailored to diverse business needs. Our growing network of partners includes Code.org, Fremax Graphics, and Salama Farm. Together, we’re transforming how people learn, work, and grow.</p>
                         <hr class="mt-4">
                           <img src="static/assets/img/signature.png" alt="Astra Softwares CEO's signature" class="" width="350" height="auto">
                         <hr class="">
@@ -373,7 +373,7 @@
                             <p class="lead mb-4">
                                 Do you want to join our team and work remotely from anywhere you’d like? We can’t wait to hear from you!
                             </p>
-                            <a href="home:careers" class="btn btn-primary">
+                            <a href="careers.php" class="btn btn-primary">
                                 <span class="me-1">
                                     <span class="fas fa-file-invoice"></span>
                                 </span>

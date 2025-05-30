@@ -6,29 +6,32 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 <title><?= $pageTitle ?? 'Astra Softwares | Innovative Solutions for your Digital space' ?></title>
+
 
 <!-- Primary Meta Tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="title" content="Astra Softwares – Transforming the Digital World">
+<meta name="keywords" content="AI software development, global software company, AI integration, website development, mobile app development, desktop applications, AI customer support, automation tools, intelligent education systems, software solutions, Astra Softwares, Best Software Company in Kenya, Web Developers">
 <meta name="author" content="Astra Softwares">
-<meta name="description" content="Astra Softwares offers AI integration, website development, UI/UX design, SEO, and digital solutions to help businesses thrive online.">
+<meta name="description" content="Astra Softwares delivers global AI and software development services, including AI systems, websites, desktop and mobile apps tailored for diverse industries.">
 <link rel="canonical" href="https://astrasoft.tech">
+
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://astrasoft.tech">
-<meta property="og:title" content="Astra Softwares – Transforming the Digital World">
-<meta property="og:description" content="Astra Softwares is your trusted partner in AI integration, website development, UI/UX design, SEO, and digital transformation. Explore our smart solutions today.">
+<meta property="og:title" content="Astra Softwares – Global AI & Software Development">
+<meta property="og:description" content="Partner with Astra Softwares for innovative AI solutions, website, desktop, and mobile app development serving clients worldwide.">
 <meta property="og:image" content="<?= $baseUrl ?>/static/assets/img/brand/logo1.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://astrasoft.tech">
-<meta property="twitter:title" content="Astra Softwares – Transforming the Digital World">
-<meta property="twitter:description" content="We specialize in AI integration, web design, development, SEO, and digital transformation solutions. Let Astra Softwares elevate your digital presence.">
+<meta property="twitter:title" content="Astra Softwares – Global AI & Software Development">
+<meta property="twitter:description" content="Innovative AI integration and software development including websites, desktop, and mobile apps for clients across the globe.">
 <meta property="twitter:image" content="<?= $baseUrl ?>/static/assets/img/brand/logo1.png">
+
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="120x120" href="<?= $baseUrl ?>/static/assets/img/favicon/apple-touch-icon.png">
@@ -45,6 +48,40 @@ $baseUrl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOS
 <!-- Pixel CSS -->
 <link type="text/css" href="<?= $baseUrl ?>/static/css/pixel.css" rel="stylesheet">
 <link type="text/css" href="<?= $baseUrl ?>/static/css/pixel.css.map" rel="stylesheet">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Astra Softwares",
+  "url": "https://astrasoft.tech",
+  "logo": "https://astrasoft.tech/static/assets/img/brand/logo1.png",
+  "description": "Astra Softwares delivers global AI and software development services, including AI systems, websites, desktop and mobile apps tailored for diverse industries.",
+  "sameAs": [
+    "https://www.facebook.com/astrasoftwares",
+    "https://twitter.com/astrasoftwares",
+    "https://www.linkedin.com/company/astrasoftwares"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+254727405667",
+    "contactType": "Customer Service",
+    "areaServed": "Worldwide",
+    "availableLanguage": ["English"]
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Ishmael Bett"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "KE"
+  }
+}
+</script>
+
+
 </head>
 <body>
 <header class="header-global">
