@@ -1,11 +1,26 @@
+<?php
+include('./config/database.php');
 
- <?php
-   
+$blogs = [];
+
+$sql = "SELECT id, blog_json FROM blog ORDER BY id DESC LIMIT 2";
+$result = $conn->query($sql);
+
+if ($result && $result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $blog = json_decode($row['blog_json'], true);
+        $blog['id'] = $row['id']; // attach the ID to the blog array
+        $blogs[] = $blog;
+    }
+}
+
+$conn->close();
+?>
+
+<?php
    $pageTitle  = "Custom Software & AI Solutions for Global & Local Businesses | Astra Softwares";
    include ('./includes/header.php');
-
- ?>
-
+?>
 
     <!-- Hero section -->
     <section class="section-header overflow-hidden pt-7 pt-lg-8 pb-9 pb-lg-12 bg-primary text-white">
@@ -27,7 +42,7 @@
                             aria-label="Star Astrasoftwares on GitHub">Star</a>
                     </div>
                     <div class="d-flex justify-content-center flex-column mb-6 mb-lg-5">
-                        <a href="#" class="d-block text-center mx-auto" target="_blank">
+                        <a href="#" class="d-block text-center mx-auto" target="_self">
                             <img src="static/assets/img/brand/logo1.png" class="d-block mx-auto mb-3" height="25"
                                 width="25"  alt="Astra Softwares Logo">
                             <span class="text-muted font-small">Astra Softwares</span>
@@ -90,7 +105,7 @@
                         <h2 class="h1">Software Development</h2>
                         <p class="mb-4 lead fw-bold">Custom software for businesses of all sizes</p>
                         <p class="mb-4">Astra Softwares is a software development company that builds modern websites, desktop applications, and mobile apps for clients across the globe. We work with businesses of all sizes, delivering custom solutions that are scalable, user-friendly, and tailored to specific needs. Our mission is to empower organizations through innovative and reliable software that drives growth and efficiency.</p>
-                        <a href="web_portfolio.php" target="_blank"
+                        <a href="web_portfolio.php" target="_self"
                             class="btn btn-outline-primary"><span class="fas fa-book me-2"></span> See our Work</a>
                     </div>
                     <div class="col-12 col-lg-6 order-lg-1">
@@ -106,7 +121,7 @@
                         <p class="mb-4">We create AI tools for a wide range of sectors, including education, health, agriculture, compliance, and customer support. Whether it's powering smart learning platforms, automating workflows in agri-tech, or assisting users through
                              conversational interfaces, we tailor AI systems to match the specific needs of each industry.</p>
                         <a href="./includes/soon.php"
-                            target="_blank" class="btn btn-primary mt-2 animate-up-2">
+                            target="_self" class="btn btn-primary mt-2 animate-up-2">
                             <span class="fas fa-th-large me-2"></span>
                             Explore our Work
                         </a>
@@ -123,7 +138,7 @@
                         <p class="mb-4 lead fw-bold">Learn in-demand tech skills through our Portfolio Ready program</p>
                         <p class="mb-4">We offer practical, project-based training for students, beginners, and professionals through our learning platform, Portfolio Ready. Our goal is to equip learners
                              with real-world coding and AI skills that are aligned with current industry demands.</p>
-                        <a href="./includes/maintain.php" target="_blank"
+                        <a href="./includes/maintain.php" target="_self"
                             class="btn btn-tertiary animate-up-2"><span class="fas fa-chart-line me-2"></span> Explore
                             Portfolio Ready</a>
                     </div>
@@ -144,72 +159,105 @@
         </div>
     </div>
 
+   
+
 <!--End of Title section-->
-<div class="section section-md">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <div class="card shadow">
-                    <img src="static/assets/img/blog/code.png" class="card-img-top rounded-top"
-                        alt="Astra Softwares Updates/ news">
-                    <div class="card-body">
-                        <span class="h6 icon-tertiary small"><span class="fas fa-medal me-2"></span>Awards</span>
-                        <h3 class="h5 card-title mt-3">We partnered up with Code.org</h3>
-                        <p class="card-text">We’re proud to collaborate with Code.org to promote coding and computer science education for students everywhere.</p>
-                        <a href="blog.php" class="btn btn-primary btn-sm">Learn More</a>
+<div class="row mb-5 section section-lg d-flex align-items-center justify-content-center blog-scroll-row" style="overflow-x: auto; white-space: nowrap; scroll-behavior: smooth;">
+    <?php foreach ($blogs as $blog): ?>
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0 d-inline-block blog-card-hover" style="float: none;">
+            <div class="card shadow">
+                <?php if (!empty($blog['banner'])): ?>
+                    <div class="position-relative" style="height: 250px; background-image: url('<?= htmlspecialchars($blog['banner']) ?>'); background-size: cover; background-position: center; border-top-left-radius: .5rem; border-top-right-radius: .5rem;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5); border-top-left-radius: .5rem; border-top-right-radius: .5rem;"></div>
+                        <h4 class="card-title position-absolute bottom-0 start-0 text-white p-3 m-0" style="z-index: 2; text-transform: capitalize; text-wrap:wrap"><?= htmlspecialchars($blog['title']) ?></h4>
                     </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <div class="card shadow">
-                    <img src="static/assets/img/blog/salama.jpeg" class="card-img-top rounded-top"
-                        alt="Astra Softwares Updates/ news">
-                    <div class="card-body">
-                        <span class="h6 icon-tertiary small"><span class="fas fa-medal me-2"></span>Awards</span>
-                        <h3 class="h5 card-title mt-3">We partnered up with Salama Farm</h3>
-                        <p class="card-text">We’ve partnered with Salama Farm to improve their software systems and support agricultural innovation through AI-driven solutions.</p>
-                        <a href="blog.php" class="btn btn-primary btn-sm">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <div class="card shadow">
-                    <img src="static/assets/img/blog/fremax.png" class="card-img-top rounded-top"
-                        alt="Astra Softwares Updates/ news">
-                    <div class="card-body">
-                        <span class="h6 icon-tertiary small"><span class="fas fa-medal me-2"></span>Awards</span>
-                        <h3 class="h5 card-title mt-3">We partnered up with Fremax</h3>
-                        <p class="card-text">Through our partnership with Fremax Graphics, clients get a full package — from custom software to professional branding — all in one place.</p>
-                        <a href="blog.php" class="btn btn-primary btn-sm">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mt-5">
-                <div class="card shadow mb-6">
-                    <div class="card-body px-5 py-5 text-center text-md-left">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <h2 class="mb-3">Get in touch</h2>
-                                <p class="mb-0">
-                                    If you need any help with our products or services, choose one of the following ways
-                                    to contact us.
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
-                                <a href="contact.php" class="btn btn-primary">
-                                    <span class="me-1">
-                                        <span class="fas fa-headphones"></span>
-                                    </span>
-                                    Contact Us
-                                </a>
-                            </div>
-                        </div>
+                <?php endif; ?>
+                <div class="card-body">
+                    <span class="h6 icon-tertiary small">
+                        <span class="fas fa-medal me-2"></span>Blog
+                    </span>
+                    <p class="card-text" style="text-wrap:wrap">
+                        <?= isset($blog['content'][0]['body']) ? substr(strip_tags($blog['content'][0]['body']), 0, 100) . '...' : 'No preview available.' ?>
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <small class="text-muted">
+                            By <strong><?= htmlspecialchars($blog['author'] ?? 'Unknown') ?></strong>
+                            <?php if (!empty($blog['date'])): ?>
+                                on <?= htmlspecialchars($blog['date']) ?>
+                            <?php endif; ?>
+                        </small>
+                        <a href="blog_details.php?id=<?=urlencode($blog['id'])?>" class="btn btn-primary btn-sm">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
+    <?php endforeach; ?>                
+    
+    <div class="container text-center mt-5">
+       <a href="blogs.php" class="btn btn-primary btn-sm">More News & Updates</a>
     </div>
 </div>
+
+
+
+<style>
+.blog-scroll-row {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+    position: relative;
+}
+.blog-card-hover {
+    transition: transform 0.3s;
+}
+.blog-card-hover:hover {
+    transform: scale(1.03);
+    z-index: 2;
+}
+</style>
+<script>
+(function() {
+    const row = document.querySelector('.blog-scroll-row');
+    let scrollInterval;
+    let isHovered = false;
+
+    function startAutoScroll() {
+        if (scrollInterval) return;
+        scrollInterval = setInterval(() => {
+            if (!isHovered) {
+                row.scrollLeft += 1;
+                // Infinite loop: if at end, scroll back to start
+                if (row.scrollLeft + row.clientWidth >= row.scrollWidth - 1) {
+                    row.scrollLeft = 0;
+                }
+            }
+        }, 20);
+    }
+
+    function stopAutoScroll() {
+        clearInterval(scrollInterval);
+        scrollInterval = null;
+    }
+
+    row.addEventListener('mouseenter', function() {
+        isHovered = true;
+    });
+    row.addEventListener('mouseleave', function() {
+        isHovered = false;
+    });
+
+    // Pause on hover of any card
+    row.querySelectorAll('.blog-card-hover').forEach(card => {
+        card.addEventListener('mouseenter', () => { isHovered = true; });
+        card.addEventListener('mouseleave', () => { isHovered = false; });
+    });
+
+    startAutoScroll();
+})();
+</script>
 
   
 
@@ -222,7 +270,7 @@
                 <p class="lead mb-4">Astra Softwares actively supports and contributes to open source projects. We build tools, share knowledge, and collaborate with
                      developers around the world to help improve software accessibility, innovation, and transparency.</p>
                 <div class="d-flex align-items-center">
-                    <a href="hhttps://github.com/astrasoftwares/awesome-useful-projects" target="_blank"
+                    <a href="hhttps://github.com/astrasoftwares/awesome-useful-projects" target="_self"
                         class="btn btn-github me-4 animate-up-2">
                         View on GitHub
                     </a>
@@ -273,7 +321,7 @@
                                         class="fas fa-times-circle"></span></span> Commercial Use</li>
                         </ul>
                     </div>
-                    <a href="./includes/maintain.php" target="_blank" class="btn btn-outline-dark w-100 mb-3"><i class="fas fa-cloud-download-alt me-2"></i>Request Access</a>
+                    <a href="./includes/maintain.php" target="_self" class="btn btn-outline-dark w-100 mb-3"><i class="fas fa-cloud-download-alt me-2"></i>Request Access</a>
                     <!-- End Content -->
                 </div>
             </div>
@@ -304,7 +352,7 @@
                                     class="icon-success"><span class="fas fa-check-circle"></span></span> Commercial Use</li>
                         </ul>
                     </div>
-                    <a href="includes/soon.php" target="_blank" class="btn btn-tertiary w-100 mb-3">Contribute on GitHub <i class="fas fa-external-link-square-alt ms-2"></i></a>
+                    <a href="includes/soon.php" target="_self" class="btn btn-tertiary w-100 mb-3">Contribute on GitHub <i class="fas fa-external-link-square-alt ms-2"></i></a>
                     <!-- End Content -->
                 </div>
             </div>

@@ -22,6 +22,8 @@ include ('./includes/header.php');
    <section class="section section-lg line-bottom-light">
       <div class="container mt-n10 mt-lg-n12 z-2">
          <div class="row">
+
+
             <div class="col-lg-12 mb-5">
                <div class="card shadow bg-white border-gray-300 flex-lg-row align-items-center g-0 p-4">
                   <a href="blog-single.php" class="col-12 col-lg-6"><img src="static/assets/img/blog/eye.jpg" alt="themesberg office" class="card-img-top rounded"></a>
@@ -38,6 +40,8 @@ include ('./includes/header.php');
                   </div>
                </div>
             </div>
+
+
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
                <div class="card shadow bg-white border-gray-300 p-4 rounded">
                   <a href="#"><img src="static/assets/img/blog/code.png" class="card-img-top rounded" alt="our desk"></a>
@@ -51,6 +55,8 @@ include ('./includes/header.php');
                   </div>
                </div>
             </div>
+
+
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
                <div class="card shadow bg-white border-gray-300 p-4 rounded">
                   <a href="#"><img src="static/assets/img/blog/fremax.png" class="card-img-top rounded" alt="web desk"></a>
@@ -64,6 +70,8 @@ include ('./includes/header.php');
                   </div>
                </div>
             </div>
+
+
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
                <div class="card shadow bg-white border-gray-300 p-4 rounded">
                   <a href="#"><img src="static/assets/img/blog/image-1.jpg" class="card-img-top rounded" alt="pixel room"></a>
@@ -77,6 +85,8 @@ include ('./includes/header.php');
                   </div>
                </div>
             </div>
+
+
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
                <div class="card shadow bg-white border-gray-300 p-4 rounded">
                   <a href="#"><img src="static/assets/img/blog/astrakilimo.png" class="card-img-top rounded" alt="designer office"></a>
@@ -90,6 +100,7 @@ include ('./includes/header.php');
                   </div>
                </div>
             </div>
+
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
                <div class="card shadow bg-white border-gray-300 p-4 rounded">
                   <a href="#"><img src="static/assets/img/blog/astrasoft.png" class="card-img-top rounded" alt="white laptop"></a>
@@ -103,6 +114,8 @@ include ('./includes/header.php');
                   </div>
                </div>
             </div>
+
+            
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
                <div class="card shadow bg-white border-gray-300 p-4 rounded">
                   <a href=""><img src="static/assets/img/blog/q-tutor.jpg" class="card-img-top rounded" alt="photoshop books"></a>
@@ -116,6 +129,8 @@ include ('./includes/header.php');
                   </div>
                </div>
             </div>
+
+
             <div class="col-12">
                <div class="d-flex justify-content-center">
                   <nav aria-label="Page navigation example">
