@@ -90,6 +90,27 @@ CREATE TABLE `blog` (
 
 
 
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    user_pass varchar (255),
+    reg_date datetime default now()
+);
+
+
+
+INSERT INTO users (first_name, last_name, email, user_pass)
+VALUES 
+('Ismael', 'Bett', 'kipkoech@astrasoft.tech', '@AstraBett2025'),
+('David', 'Nanjila', 'nanjila@astrasoft.tech', '@AstraNanjila2025'),
+('Samuel', 'Oduor', 'samuel@astrasoft.tech', '@AstraSamuel2025'),
+('Elizabeth', 'Onyango', 'elizabeth@astrasoft.tech', '@AstraElizabeth2025'),
+('Denis', 'Pius', 'denis@astrasoft.tech', '@AstraDenis2025');
+
+
 --
 -- Dumping data for table `blog`
 --

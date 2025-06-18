@@ -22,8 +22,9 @@
                 <div class="row">
                     <div class="col-12">
                         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4069485901057!2d36.82501123873194!3d-1.2856671318412052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f112834afaba7%3A0x13d7f7280ed5fda6!2sAmbassadeur%20Hotel!5e0!3m2!1sen!2ske!4v1748011566018!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                        <iframe class="map rounded" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1248.872794287873!2d36.82393835512598!3d-1.2857046733138655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f112834afaba7%3A0x13d7f7280ed5fda6!2sAmbassadeur%20Hotel!5e1!3m2!1sen!2ske!4v1748011222923!5m2!1sen!2ske"></iframe>
-                    </div>
+                        <iframe class="map rounded" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1895.7254397618797!2d36.82601085026243!3d-1.2855526818361587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2f5048029f278a7d%3A0x47f0046ff195b650!2sAstra%20Softwares!5e1!3m2!1sen!2ske!4v1749822752547!5m2!1sen!2ske"></iframe>
+                    
+                        </div>
                 </div>
             </div>
         </div>

@@ -1,12 +1,17 @@
 <?php
 
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header('Location: ./index.php');
+    exit;
+}
+
+
 include ('./config/database.php');
-
-
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = $_POST['title'];
-    $author = $_POST['author'];
+    $author = $_SESSION['user_name'];
     $date = date('Y-m-d');
     // $banner assignment removed; banner is handled via $_FILES below
 
@@ -192,7 +197,7 @@ if (isset($_FILES['banner']) && $_FILES['banner']['error'] === UPLOAD_ERR_OK) {
 
             <div class="mb-3">
                 <label class="form-label">Author</label>
-                <input type="text" name="author" class="form-control" required>
+                <input type="text" name="author" class="form-control" value="<?=$_SESSION['user_name']?>" disabled>
             </div>
 
             <!-- <div class="mb-3">

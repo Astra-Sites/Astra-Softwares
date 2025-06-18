@@ -369,6 +369,20 @@ $conn->close();
 <!--End of Contact form -->
 
 
+ <div class="section section-sm pb-0 mb-n4" id="components">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h3 class="text-center">Our Testimonials</h3>
+        </div>
+    </div>
+</div>
+<div class="section section-md">
+<div class="container">
+
+<div class="elfsight-app-26c68c9c-969c-4eac-96e3-c0a9214e5a18" data-elfsight-app-lazy></div>
+
+</div>
+</div>
 
 <div class="section section-sm pb-0 mb-n4" id="components">
     <div class="container">
@@ -470,6 +484,14 @@ $conn->close();
         </div>
     </div>
  </div>
+
+
+
+
+
+<!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+
 
 
 <?php

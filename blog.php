@@ -1,157 +1,143 @@
-
-
 <?php
+include ('./config/database.php');
 
-$pageTitle  = "AI Innovation, Software Trends & Dev Insights | Astra Trends Blog";
-include ('./includes/header.php');
+// Set how many blogs to show per page
+$blogsPerPage = 4;
+
+// Get current page from URL (default to 1)
+$currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+if ($currentPage < 1) $currentPage = 1;
+
+// Calculate the OFFSET
+$offset = ($currentPage - 1) * $blogsPerPage;
+
+// Fetch total number of blogs
+$totalResult = $conn->query("SELECT COUNT(*) as total FROM blog");
+$totalBlogs = $totalResult->fetch_assoc()['total'];
+$totalPages = ceil($totalBlogs / $blogsPerPage);
+
+// Fetch current page blogs
+$result = $conn->query("SELECT id, blog_json FROM blog ORDER BY id DESC LIMIT $blogsPerPage OFFSET $offset");
+
+$blogs = [];
+while ($row = $result->fetch_assoc()) {
+    $blog = json_decode($row['blog_json'], true);
+    $blog['id'] = $row['id'];
+    $blogs[] = $blog;
+}
+
+$conn->close();
 ?>
 
 
 
-   <!-- Hero -->
-   <section class="section-header bg-primary text-white pb-10 pb-sm-8 pb-lg-11">
-      <div class="container">
-         <div class="row justify-content-center">
+<?php 
+    $pageTitle  = "Astra Softwares | Stay updated with the latest news & insights";
+    include ('./includes/header.php');
+?>
+
+
+
+<!-- Hero -->
+<section class="section-header bg-primary text-white">
+    <div class="container">
+        <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-center">
-               <h1 class="display-2 mb-4">Our Blog</h1>
-               <p class="lead">Welcome to our blog — your go-to source for tech insights, project updates, and digital innovation tips. Stay inspired!</p>
+                <h1 class="display-2 mb-3">Our Blog</h1>
+                <p>Stay updated with the latest news, insights, and stories from Astra Softwares. Explore our articles on technology, AI, software development, and more.</p>
             </div>
-         </div>
-      </div>
-   </section>
-   <section class="section section-lg line-bottom-light">
-      <div class="container mt-n10 mt-lg-n12 z-2">
-         <div class="row">
+        </div>
+    </div>
+</section>
+<!-- End of Hero section -->
 
 
-            <div class="col-lg-12 mb-5">
-               <div class="card shadow bg-white border-gray-300 flex-lg-row align-items-center g-0 p-4">
-                  <a href="blog-single.php" class="col-12 col-lg-6"><img src="static/assets/img/blog/eye.jpg" alt="themesberg office" class="card-img-top rounded"></a>
-                  <div class="card-body d-flex flex-column justify-content-between col-auto py-4 p-0 p-lg-3 p-xl-5">
-                     <a href="blog-single.php">
-                        <h2>The Year 2050 in 8K resolution, Welcome to the Future</h2>
-                     </a>
-                     <p>At Astra Softwares, we're constantly pushing boundaries to bring the future closer to today. One of the most exciting and transformative areas we're diving into is Quantum Machine Learning (QML)—an emerging discipline that blends the speed and complexity-handling power of quantum computing with the predictive intelligence of machine learning. <a href="blog-single.php"><span class="badge bg-tertiary"> Read More</span></a></p>
-                     <div class="d-flex align-items-center mt-3">
-                        <img class="avatar avatar-sm rounded-circle" src="static/assets/img/team/hope.jpg" alt="Kipkoech avatar">
-                        <h3 class="h6 small ms-2 mb-0">Kipkoech Bett</h3>
-                        <span class="h6 text-muted small fw-normal mb-0 ms-auto"><time datetime="2019-04-25">10 May, 2025</time></span>
-                     </div>
-                  </div>
-               </div>
+
+<div class="container py-5">
+    <?php if (empty($blogs)): ?>
+        <p>No blogs found.</p>
+    <?php else: ?>
+        <?php foreach ($blogs as $index => $blog): ?>
+            <div class="card mb-4 shadow">
+                <?php if (!empty($blog['banner'])): ?>
+                    <div class="position-relative" style="height: 250px; background-image: url('<?= htmlspecialchars($blog['banner']) ?>'); background-size: cover; background-position: center; border-top-left-radius: .5rem; border-top-right-radius: .5rem;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5); border-top-left-radius: .5rem; border-top-right-radius: .5rem;"></div>
+                        <h1 class="card-title position-absolute bottom-0 start-0 text-white p-3 m-0" style="z-index: 2; text-transform: capitalize;"><?= htmlspecialchars($blog['title']) ?></h1>
+                    </div>
+                <?php endif; ?>
+                
+                <div class="card-body">
+                    <p class="text-muted">
+                        By <strong><?= htmlspecialchars($blog['author']) ?></strong> on <?= htmlspecialchars($blog['date']) ?>
+                    </p>
+                    <hr>
+
+                    <?php
+                        // Show only the first content section
+                        $firstBlock = $blog['content'][0] ?? null;
+                        if ($firstBlock && $firstBlock['type'] === 'text'):
+                    ?>
+                        <h4><?= htmlspecialchars($firstBlock['heading']) ?></h4>
+                    <p>
+                        <?= (mb_substr($firstBlock['body'], 0, 300)) ?>
+                    </p>
+                    <?php elseif ($firstBlock && $firstBlock['type'] === 'image'): ?>
+                        <div class="my-3">
+                            <img src="<?= htmlspecialchars($firstBlock['url']) ?>" class="img-fluid rounded mx-auto d-block" style="max-width: 300px;" alt="<?= htmlspecialchars($firstBlock['url']) ?>">
+                            <small class="text-muted d-block"><?= htmlspecialchars($firstBlock['caption']) ?></small>
+                        </div>
+                    <?php endif; ?>
+
+                    <div class="mt-3">
+                        <a href="blog_details.php?id=<?= urlencode($blog['id']) ?>" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
             </div>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</div>
 
 
-            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
-               <div class="card shadow bg-white border-gray-300 p-4 rounded">
-                  <a href="#"><img src="static/assets/img/blog/code.png" class="card-img-top rounded" alt="our desk"></a>
-                  <div class="card-body p-0 pt-4">
-                     <a href="#" class="h4">Empowering Future Coders: Our Partnership with Code.org</a>
-                     <div class="d-flex align-items-center my-3">
-                        <img class="avatar avatar-sm rounded-circle" src="static/assets/img/team/ishmael.jpg" alt="Ishmael avatar">
-                        <h3 class="h6 small ms-2 mb-0">Ismael Kipkoech</h3>
-                     </div>
-                     <p class="mb-0">We’re proud to partner with Code.org to inspire the next generation of developers. Through this collaboration, we aim to make coding education more accessible, fun, and impactful for learners of all ages</p>
-                  </div>
-               </div>
-            </div>
+<!-- Pagination -->
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
 
+    <!-- Prev Button -->
+    <li class="page-item <?= $currentPage <= 1 ? 'disabled' : '' ?>">
+      <a class="page-link" href="?page=<?= $currentPage - 1 ?>" aria-label="Previous">
+        <span aria-hidden="true">&laquo; Prev</span>
+      </a>
+    </li>
 
-            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
-               <div class="card shadow bg-white border-gray-300 p-4 rounded">
-                  <a href="#"><img src="static/assets/img/blog/fremax.png" class="card-img-top rounded" alt="web desk"></a>
-                  <div class="card-body p-0 pt-4">
-                     <a href="#" class="h4">A Powerful Alliance: Our Partnership with Fremax Graphics</a>
-                     <div class="d-flex align-items-center my-3">
-                        <img class="avatar avatar-sm rounded-circle" src="static/assets/img/team/samwel.jpg" alt="Samwel avatar">
-                        <h3 class="h6 small ms-2 mb-0">Samwel Khan</h3>
-                     </div>
-                     <p class="mb-0">Through this partnership, clients can now access a comprehensive digital and branding package under one roof.</p>
-                  </div>
-               </div>
-            </div>
+    <!-- Page Numbers -->
+    <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+      <li class="page-item <?= $i == $currentPage ? 'active' : '' ?>">
+        <a class="page-link" href="?page=<?= $i ?>"><?= $i ?></a>
+      </li>
+    <?php endfor; ?>
 
+    <!-- Next Button -->
+    <li class="page-item <?= $currentPage >= $totalPages ? 'disabled' : '' ?>">
+      <a class="page-link" href="?page=<?= $currentPage + 1 ?>" aria-label="Next">
+        <span aria-hidden="true">Next &raquo;</span>
+      </a>
+    </li>
+    
+  </ul>
+</nav>
 
-            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
-               <div class="card shadow bg-white border-gray-300 p-4 rounded">
-                  <a href="#"><img src="static/assets/img/blog/image-1.jpg" class="card-img-top rounded" alt="pixel room"></a>
-                  <div class="card-body p-0 pt-4">
-                     <a href="#" class="h4">Updates on the Portfolio Ready Program</a>
-                     <div class="d-flex align-items-center my-3">
-                        <img class="avatar avatar-sm rounded-circle" src="static/assets/img/team/eliza.jpg" alt="Elizabeth avatar">
-                        <h3 class="h6 small ms-2 mb-0">Elizabeth Onyango</h3>
-                     </div>
-                     <p class="mb-0">We’re in the final stages of polishing the Portfolio Ready program! Stay tuned — the official launch date will be announced soon.</p>
-                  </div>
-               </div>
-            </div>
-
-
-            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
-               <div class="card shadow bg-white border-gray-300 p-4 rounded">
-                  <a href="#"><img src="static/assets/img/blog/astrakilimo.png" class="card-img-top rounded" alt="designer office"></a>
-                  <div class="card-body p-0 pt-4">
-                     <a href="#" class="h4">Introducing Astra Kilimo: Your Day-to-Day Farm Companion</a>
-                     <div class="d-flex align-items-center my-3">
-                        <img class="avatar avatar-sm rounded-circle" src="static/assets/img/team/denis.jpg" alt="Denis avatar">
-                        <h3 class="h6 small ms-2 mb-0">Denis Pius</h3>
-                     </div>
-                     <p class="mb-0">Say hello to Astra Kilimo — your smart farming assistant designed to support everyday agricultural needs. From crop analysis to weather updates, Astra Kilimo helps farmers make informed decisions with ease.</p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
-               <div class="card shadow bg-white border-gray-300 p-4 rounded">
-                  <a href="#"><img src="static/assets/img/blog/astrasoft.png" class="card-img-top rounded" alt="white laptop"></a>
-                  <div class="card-body p-0 pt-4">
-                     <a href="#" class="h4">Introducing Astra Pilot: Your Smart Project Co-Pilot</a>
-                     <div class="d-flex align-items-center my-3">
-                        <img class="avatar avatar-sm rounded-circle" src="static/assets/img/team/hope.jpg" alt="Hope avatar">
-                        <h3 class="h6 small ms-2 mb-0">Bett Kipkoech</h3>
-                     </div>
-                     <p class="mb-0">Meet Astra Pilot — your intelligent project management assistant. From idea generation to execution planning, bug tracking, and documentation, Astra Pilot helps streamline your workflow every step of the way.</p>
-                  </div>
-               </div>
-            </div>
-
-            
-            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-5">
-               <div class="card shadow bg-white border-gray-300 p-4 rounded">
-                  <a href=""><img src="static/assets/img/blog/q-tutor.jpg" class="card-img-top rounded" alt="photoshop books"></a>
-                  <div class="card-body p-0 pt-4">
-                     <a href="#" class="h4">Introducing Q-Tutor: Your Quantum-Powered Coding Companion</a>
-                     <div class="d-flex align-items-center my-3">
-                        <img class="avatar avatar-sm rounded-circle" src="static/assets/img/team/ishmael.jpg" alt="Joseph avatar">
-                        <h3 class="h6 small ms-2 mb-0">Kipkoech Bett</h3>
-                     </div>
-                     <p class="mb-0">Q-Tutor is here to revolutionize how you code — combining classical AI with quantum-enhanced suggestions for smarter debugging, code refactoring, and learning. Experience the future of pair programming today.</p>
-                  </div>
-               </div>
-            </div>
-
-
-            <div class="col-12">
-               <div class="d-flex justify-content-center">
-                  <nav aria-label="Page navigation example">
-                     <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                     </ul>
-                  </nav>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
- 
 
 <?php
-include ('./includes/footer.php');
+  include ('./includes/footer.php');
 ?>
-  
+
+
+
+
+
+
+
+
+
+
+
